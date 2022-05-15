@@ -45,4 +45,7 @@ function getDataForm(e) {
     });
 }
 form.addEventListener("submit", getDataForm);
-logo.addEventListener("click", resetResults);
+logo.addEventListener("click", function () {
+  input.value = "";
+  resetResults();
+});
