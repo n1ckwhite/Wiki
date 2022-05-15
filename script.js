@@ -13,7 +13,7 @@ function createItem(title, snippet) {
   const item = t.querySelector(".wiki__item").cloneNode(true);
   item.querySelector(
     ".wiki__link"
-  ).href = `https://en.wikipedia.org/wiki/${title}`;
+  ).href = `https://ru.wikipedia.org/wiki/${title}`;
   item.querySelector(".wiki__item-title").textContent = title;
   item.querySelector(
     ".wiki__item-subtitle"
