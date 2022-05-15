@@ -5,6 +5,7 @@ const list = document.querySelector(".wiki__list");
 const spinner = document.querySelector(".loader");
 const logo = document.querySelector(".logo");
 
+<<<<<<< HEAD
 function resetResults() {
   list.innerHTML = "";
 }
@@ -20,6 +21,14 @@ function createItem(title, snippet) {
   ).textContent = `https://ru.wikipedia.org/wiki/${title}`;
   item.querySelector(".wiki__item-descr").innerHTML = snippet;
   return list.append(item);
+=======
+function createItem(title,snippet) {
+    const item = t.querySelector('.wiki__item').cloneNode(true);item.querySelector('.wiki__link').href = `https://ru.wikipedia.org/wiki/${title}`;
+    item.querySelector('.wiki__item-title').textContent = title;
+    item.querySelector('.wiki__item-subtitle').textContent = `https://ru.wikipedia.org/wiki/${title}`;
+    item.querySelector('.wiki__item-descr').innerHTML = snippet;
+    return list.append(item)
+>>>>>>> 3d93169b6ddb655a03b36cdd9584a2424193e2a5
 }
 
 function getDataForm(e) {
@@ -44,5 +53,9 @@ function getDataForm(e) {
       }
     });
 }
+<<<<<<< HEAD
 form.addEventListener("submit", getDataForm);
 logo.addEventListener("click", resetResults);
+=======
+form.addEventListener('submit',getDataForm);
+>>>>>>> 3d93169b6ddb655a03b36cdd9584a2424193e2a5
