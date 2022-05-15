@@ -1,32 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Wiki</title>
-</head>
-<body class="page">
-<section class="wiki">
-    <img src="logo.png" alt="Wiki" class="logo">
-    <form action="#" class="wiki__form">
-        <input type="text" name="search" class="wiki__input" placeholder="Поиск...">
+  </head>
+  <body class="page">
+    <section class="wiki">
+      <img src="logo.png" alt="Wiki" class="logo" />
+      <form action="#" class="wiki__form">
+        <input
+          type="text"
+          name="search"
+          class="wiki__input"
+          placeholder="Поиск..."
+        />
         <button class="wiki__button">Поиск</button>
-    </form>
-    <ul class="wiki__list"></ul>
-    <div class="loader"></div>
-<template class="result">
-    <li class="wiki__item">
-        <a href="#" class="wiki__link" target="_blank">
+      </form>
+      <ul class="wiki__list"></ul>
+      <div class="loader"></div>
+      <template class="result">
+        <li class="wiki__item">
+          <a href="#" class="wiki__link" target="_blank">
             <span class="wiki__item-title"></span>
             <span class="wiki__item-subtitle"></span>
             <span class="wiki__item-descr"></span>
-        </a>
-    </li>
-</template>
-</section>
-<script src="script.js"></script>
-</body>
+          </a>
+        </li>
+      </template>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
